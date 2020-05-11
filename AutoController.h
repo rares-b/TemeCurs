@@ -1,0 +1,14 @@
+#include "auto_in_memory.h"
+
+class AutoController {
+private:
+    AutoInMemoryRepository repo;
+    AutoController();
+    static AutoController * instance;   //incapsulez instanta in autoctroller (accesibila fara a fi necesara crearea unui obiect)
+
+public:
+    static AutoController* createInstance();
+
+    void sort_autos();
+    // Repo functions.
+};
